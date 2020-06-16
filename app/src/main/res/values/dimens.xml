@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    //Margins
+    <dimen name="margin_four">4dp</dimen>
+    <dimen name="margin_eight">8dp</dimen>
+    <dimen name="margin_sixteen">16dp</dimen>
+    <dimen name="margin_twenty_four">24dp</dimen>
+    <dimen name="margin_twenty">20dp</dimen>
+
+    //AAngles
+
+    //Texts
+    <dimen name="text_fourteen">14sp</dimen>
+</resources>

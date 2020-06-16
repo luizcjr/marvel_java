@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/actionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainContent"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/margin_sixteen"
+        android:paddingEnd="@dimen/margin_sixteen"
+        android:paddingBottom="@dimen/margin_sixteen" />
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_twenty_four">
+
+        <TextView
+            android:id="@+id/alertTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/margin_eight"
+            android:fontFamily="@font/gilroy_bold"
+            android:textAlignment="viewStart"
+            android:theme="@style/TextAlertTitle" />
+
+        <TextView
+            android:id="@+id/alertContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_eight"
+            android:fontFamily="@font/gilroy_medium"
+            android:lineSpacingExtra="@dimen/margin_four"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_fourteen" />
+    </LinearLayout>
+</RelativeLayout>

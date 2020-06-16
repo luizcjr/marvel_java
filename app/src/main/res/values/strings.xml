@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Marvel</string>
+
+    //Alerts strings
+    <string name="alert_ok_action">OK</string>
+    <string name="alert_error_title">OPS!!!</string>
+    <string name="alert_success_title">Sucesso!</string>
+    <string name="title_welcome_to_marvel_heroes">Bem vindo ao Marvel Heroes</string>
+    <string name="title_choose_character">Escolha o seu personagem</string>
+    <string name="title_description_image_age">Ícone indicando idade</string>
+    <string name="title_description_image_weight">Ícone indicando peso</string>
+    <string name="title_description_image_height">Ícone indicando altura</string>
+    <string name="title_description_image_universe">Ícone indicando universo</string>
+    <string name="title_force">Força</string>
+    <string name="title_intelligence">Inteligência</string>
+    <string name="title_agility">Agilidade</string>
+    <string name="title_resistency">Resistência</string>
+    <string name="title_speed">Velocidade</string>
+    <string name="title_description_image_character">Imagem do personagem</string>
+    <string name="title_description_image_back">Ícone para voltar para tela anterior</string>
+    <string name="title_habilities">Habilidades</string>
+</resources>
