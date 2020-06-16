@@ -1,4 +1,4 @@
-[![](logo)](https://github.com/luizcjr/marvel_java/blob/master/Presentantion/marvel-comics-logo-180x180.jpg)
+![](https://github.com/luizcjr/marvel_java/blob/master/Presentantion/marvel-comics-logo-180x180.jpg)
 
 ### Marvel Heroes App
 
