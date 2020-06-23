@@ -13,7 +13,7 @@ import androidx.databinding.ViewDataBinding;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 
-import com.example.marvel.ui.activities.MainActivity;
+import com.example.marvel.ui.activities.main.MainActivity;
 import com.example.marvel.util.Util;
 
 import io.reactivex.disposables.CompositeDisposable;

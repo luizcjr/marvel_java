@@ -19,4 +19,11 @@
     <string name="title_description_image_character">Imagem do personagem</string>
     <string name="title_description_image_back">Ícone para voltar para tela anterior</string>
     <string name="title_habilities">Habilidades</string>
+
+    <string name="text_no_internet_access">No internet access</string>
+    <string name="text_connection_reestablished">Internet connection re-established</string>
+
+    <string name="text_message_invalid_type_animation">
+        Animation type invalid! Check the types of animation callback available in BaseViewModel.
+    </string>
 </resources>

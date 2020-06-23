@@ -39,6 +39,7 @@ def lifecycleVersion = "2.2.0"
 def retrofitVersion = '2.9.0'
 def rxJavaVersion = '3.0.4'
 def rxAndroidVersion = '2.1.1'
+def lottieVersion = '3.4.0'
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
@@ -89,4 +90,7 @@ dependencies {
     //RxJava
     implementation "io.reactivex.rxjava3:rxjava:$rxJavaVersion"
     implementation "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+
+    /* Airbnb lottie */
+    implementation "com.airbnb.android:lottie:$lottieVersion"
 }

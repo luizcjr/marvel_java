@@ -13,4 +13,5 @@
 
     //Texts
     <dimen name="text_fourteen">14sp</dimen>
+    <dimen name="text_twenty_three">23sp</dimen>
 </resources>
