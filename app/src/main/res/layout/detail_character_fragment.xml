@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
 
     <data class="DetailsCharacterBinding">
 
@@ -290,7 +291,7 @@
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:id="@+id/clLabels"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/margin_sixteen"
                             app:layout_constraintStart_toStartOf="parent"
@@ -307,6 +308,17 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
+                            <com.example.marvel.ui.view.CustomProgressBar
+                                android:id="@+id/seekForce"
+                                android:layout_width="0dp"
+                                android:layout_height="12dp"
+                                android:layout_marginStart="@dimen/margin_twenty_four"
+                                android:layout_marginTop="@dimen/margin_four"
+                                android:progress="@{character.abilities.force}"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/txtLabelInteligence"
+                                app:layout_constraintTop_toTopOf="@+id/txtLabelForce" />
+
                             <TextView
                                 android:id="@+id/txtLabelInteligence"
                                 android:layout_width="wrap_content"
@@ -318,6 +330,17 @@
                                 android:textSize="16sp"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/txtLabelForce" />
+
+                            <com.example.marvel.ui.view.CustomProgressBar
+                                android:id="@+id/seekIntelligence"
+                                android:layout_width="0dp"
+                                android:layout_height="12dp"
+                                android:layout_marginStart="@dimen/margin_twenty_four"
+                                android:layout_marginTop="@dimen/margin_four"
+                                android:progress="@{character.abilities.intelligence}"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/txtLabelInteligence"
+                                app:layout_constraintTop_toTopOf="@+id/txtLabelInteligence" />
 
                             <TextView
                                 android:id="@+id/txtLabelAgility"
@@ -331,6 +354,17 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/txtLabelInteligence" />
 
+                            <com.example.marvel.ui.view.CustomProgressBar
+                                android:id="@+id/seekAgility"
+                                android:layout_width="0dp"
+                                android:layout_height="12dp"
+                                android:layout_marginStart="@dimen/margin_twenty_four"
+                                android:layout_marginTop="@dimen/margin_four"
+                                android:progress="@{character.abilities.agility}"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/txtLabelInteligence"
+                                app:layout_constraintTop_toTopOf="@+id/txtLabelAgility" />
+
                             <TextView
                                 android:id="@+id/txtLabelResistency"
                                 android:layout_width="wrap_content"
@@ -342,6 +376,17 @@
                                 android:textSize="16sp"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/txtLabelAgility" />
+
+                            <com.example.marvel.ui.view.CustomProgressBar
+                                android:id="@+id/seekEndurance"
+                                android:layout_width="0dp"
+                                android:layout_height="12dp"
+                                android:layout_marginStart="@dimen/margin_twenty_four"
+                                android:layout_marginTop="@dimen/margin_four"
+                                android:progress="@{character.abilities.endurance}"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/txtLabelInteligence"
+                                app:layout_constraintTop_toTopOf="@+id/txtLabelResistency" />
 
                             <TextView
                                 android:id="@+id/txtLabelSpeed"
@@ -355,69 +400,16 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/txtLabelResistency" />
 
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/clLabels"
-                            app:layout_constraintTop_toTopOf="@+id/clLabels">
-
-                            <androidx.appcompat.widget.AppCompatSeekBar
-                                android:id="@+id/seekForce"
+                            <com.example.marvel.ui.view.CustomProgressBar
+                                android:id="@+id/seekVelocity"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="12dp"
+                                android:layout_marginStart="@dimen/margin_twenty_four"
                                 android:layout_marginTop="@dimen/margin_four"
-                                android:enabled="false"
-                                android:max="100"
-                                android:progress="@{character.abilities.force}"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <androidx.appcompat.widget.AppCompatSeekBar
-                                android:id="@+id/seekIntelligence"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/margin_sixteen"
-                                android:max="100"
-                                android:progress="@{character.abilities.intelligence}"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/seekForce" />
-
-                            <androidx.appcompat.widget.AppCompatSeekBar
-                                android:id="@+id/seekAgility"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/margin_sixteen"
-                                android:max="100"
-                                android:progress="@{character.abilities.agility}"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/seekIntelligence" />
-
-                            <androidx.appcompat.widget.AppCompatSeekBar
-                                android:id="@+id/seekEndurance"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/margin_twenty"
-                                android:max="100"
-                                android:progress="@{character.abilities.endurance}"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/seekAgility" />
-
-                            <androidx.appcompat.widget.AppCompatSeekBar
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/margin_sixteen"
-                                android:max="100"
                                 android:progress="@{character.abilities.velocity}"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/seekEndurance" />
+                                app:layout_constraintStart_toEndOf="@+id/txtLabelInteligence"
+                                app:layout_constraintTop_toTopOf="@+id/txtLabelSpeed" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.constraintlayout.widget.ConstraintLayout>
